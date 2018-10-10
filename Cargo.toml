@@ -1,0 +1,11 @@
+[package]
+name = "signrel"
+version = "1.0.0"
+authors = ["Nathaniel McCallum <npmccallum@redhat.com>"]
+keywords = ["signedness", "signed", "unsigned", "integer"]
+repository = "https://github.com/psilocybin/signrel"
+description = "Trait expressing relationship between integers of different signedness"
+documentation = "https://docs.rs/signrel"
+license = "Apache-2.0"
+readme = "README.md"
+build = "build.rs"

@@ -25,7 +25,4 @@ macro_rules! sr_impl {
     )
 }
 
-sr_impl! { isize:usize i64:u64 i32:u32 i16:u16 i8:u8 }
-
-#[cfg(has_i128)]
-sr_impl! { i128:u128 }
+sr_impl! { isize:usize i128:u128 i64:u64 i32:u32 i16:u16 i8:u8 }

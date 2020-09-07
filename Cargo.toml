@@ -8,4 +8,3 @@ description = "Trait expressing relationship between integers of different signe
 documentation = "https://docs.rs/signrel"
 license = "Apache-2.0"
 readme = "README.md"
-build = "build.rs"

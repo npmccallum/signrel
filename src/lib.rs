@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 #![no_std]
+#![deny(clippy::all)]
 
 /// Expressed relationship between integers differing only by signedness.
 pub trait SignRel {

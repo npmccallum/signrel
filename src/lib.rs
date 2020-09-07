@@ -21,10 +21,10 @@
 /// The relationship between integers differing only by signedness
 pub trait SignRel {
     /// The unsigned integer type with the same size as `Self`
-    type Unsigned;
+    type Unsigned: SignRel;
 
     /// The signed integer type with the same size as `Self`
-    type Signed;
+    type Signed: SignRel;
 }
 
 macro_rules! sr_impl {

@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
+#![no_std]
+
 /// Expressed relationship between integers differing only by signedness.
 pub trait SignRel {
     /// The unsigned integer type with the same size as Self.

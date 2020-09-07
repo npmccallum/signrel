@@ -19,7 +19,7 @@
 #![deny(missing_docs)]
 
 /// The relationship between integers differing only by signedness
-pub trait SignRel {
+pub trait SignRel: Copy {
     /// The unsigned integer type with the same size as `Self`
     type Unsigned: SignRel;
 

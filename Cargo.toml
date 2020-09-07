@@ -8,3 +8,11 @@ description = "Trait expressing relationship between integers of different signe
 documentation = "https://docs.rs/signrel"
 license = "Apache-2.0"
 readme = "README.md"
+
+[badges]
+# See https://doc.rust-lang.org/cargo/reference/manifest.html#the-badges-section
+github = { repository = "enarx/sev", workflow = "test" }
+#github = { repository = "enarx/sev", workflow = "lint" }
+maintenance = { status = "actively-developed" }
+is-it-maintained-issue-resolution = { repository = "enarx/sev" }
+is-it-maintained-open-issues = { repository = "enarx/sev" }

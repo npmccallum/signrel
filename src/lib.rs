@@ -1,14 +1,29 @@
 // SPDX-License-Identifier: Apache-2.0
 
+//! This crate provides the `SignRel` trait which maps relationships between
+//! integers that only differ by signedness. For example, both `a` and `b` in
+//! this example have the type `usize`:
+//!
+//! ```rust
+//! use signrel::SignRel;
+//!
+//! let a: <isize as SignRel>::Unsigned = 17;
+//! let b: <usize as SignRel>::Unsigned = 17;
+//!
+//! assert_eq!(17usize, a);
+//! assert_eq!(17usize, b);
+//! ```
+
 #![no_std]
 #![deny(clippy::all)]
+#![deny(missing_docs)]
 
-/// Expressed relationship between integers differing only by signedness.
+/// The relationship between integers differing only by signedness
 pub trait SignRel {
-    /// The unsigned integer type with the same size as Self.
+    /// The unsigned integer type with the same size as `Self`
     type Unsigned;
 
-    /// The signed integer type with the same size as Self.
+    /// The signed integer type with the same size as `Self`
     type Signed;
 }
 

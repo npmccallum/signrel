@@ -1,6 +1,6 @@
 [package]
 name = "signrel"
-version = "1.0.1"
+version = "1.0.2"
 authors = ["Nathaniel McCallum <npmccallum@redhat.com>"]
 keywords = ["signedness", "signed", "unsigned", "integer"]
 repository = "https://github.com/enarx/signrel"
